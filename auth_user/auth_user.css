@@ -221,7 +221,7 @@ td{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: red;
+  background-color: var(--colorBg3);
   background-image: var(--bs-form-select-bg-img),var(--bs-form-select-bg-icon,none);
   background-repeat: no-repeat;
   background-position: right .75rem center;
