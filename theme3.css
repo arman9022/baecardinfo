@@ -1,0 +1,176 @@
+:root{
+
+  /* LIGHT */
+  --colorBody:white;
+  --colorContent:#ede7e7;
+  --colorText:rgb(25, 25, 25);
+  --colorSocail1:#363636;
+  --colorSocail2:white;
+  --colorSubText:#dc9107;
+  --colorBtn1:white;
+  --colorBtn2:#363636;
+  --colorProduct:#d3d4d5;
+
+  /* DARK */
+  --colorBody:#2C2E36;
+  --colorContent:#181B20;
+  --colorText:white;
+  --colorSocail1:white;
+  --colorSocail2:#363636;
+  --colorSubText:#dc9107;
+  --colorBtn1:white;
+  --colorBtn2:#363636;
+  --colorProduct:#2C2E36;
+
+}
+
+body{
+  background: var(--colorBody);
+}
+a{text-decoration: none;}
+*{
+  font-family: "Nunito", sans-serif;
+}
+.mainContent{
+  min-height: 100vh;
+  background: var(--colorContent);
+}
+.coverPhoto{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+.profileInfo{
+  margin-top: -100px;
+}
+.profilePhoto{
+  border: 2px solid white;
+  border-radius: 50px;
+}
+.userName{
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+.userDesignation{
+  color: var(--colorSubText);
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px white;
+}
+
+.socialContainer{
+  background: transparent;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.iconDiv{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+}
+.iconContainer{
+  width: 50px;
+  height: 50px;
+  font-size: 33px;
+  color: var(--colorSocail1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--colorSocail2);
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.iconContainer:hover{
+  color: var(--colorSocail2);
+  background: var(--colorSocail1);
+}
+.headingBorder{
+  border-top: 2px solid var(--colorBtn2);
+}
+.textColor{
+  color: var(--colorText);
+}
+.productBoxContainer{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.productBoxOuter{
+  width: 250px;
+  height: 200px;
+  background: var(--colorProduct);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.productBoxInner{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-top: -150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn-one {
+  --bs-btn-color: var(--colorBtn2);
+  --bs-btn-bg: var(--colorBtn1);
+  --bs-btn-border-color: var(--colorBtn2);
+
+  --bs-btn-hover-color: var(--colorBtn1);
+  --bs-btn-hover-bg: var(--colorBtn2);
+  --bs-btn-hover-border-color: var(--colorBtn1);
+
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+
+  --bs-btn-active-color: var(--colorBtn1);
+  --bs-btn-active-bg: var(--colorBtn2);
+  --bs-btn-active-border-color: var(--colorBtn1);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+
+  --bs-btn-disabled-color: var(--colorBtn1);
+  --bs-btn-disabled-bg: var(--colorBtn2);
+  --bs-btn-disabled-border-color: var(--colorBtn1);
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+.form-control{
+  color: var(--colorText);
+  background-color: var(--colorBody);
+}
+.form-control:focus {
+  box-shadow: none;
+  color: var(--colorText);
+  background-color: var(--colorContent);
+}
+.form-control:disabled {
+  background-color: var(--colorBody);
+  opacity: 1;
+}
+.modal-header{
+  background: var(--colorContent);
+  color: var(--colorText);
+}
+.modal-body{
+  background: var(--colorBody);
+  color: var(--colorText);
+}
+.btn-close {
+  background: var(--colorBody) var(--bs-btn-close-bg) center/1em auto no-repeat;
+}
+.btn-close:focus {
+  outline: 0;
+  box-shadow: none;
+  opacity: var(--bs-btn-close-focus-opacity);
+}
