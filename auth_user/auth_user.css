@@ -1,17 +1,6 @@
 
 :root{
 
-  /* LIGHT */
-  --colorBg1: #fff;
-  --colorBg2: #EFF3F7;
-  --colorBg3: #f8f8f8;
-  --colorText1: #000;
-  --colorBtn1: #262626;
-  --colorBtn2: #fff;
-  --colorLink1: #2e2e2e;
-  --colorLink2: #fff;
-  --colorLink3: #c2c2c2;
-
   /* DARK */
   --colorBg1: #262626;
   --colorBg2: #2e2e2e;
@@ -22,6 +11,17 @@
   --colorLink1: #fff;
   --colorLink2: #262626;
   --colorLink3: #474747;
+
+  /* LIGHT */
+  --colorBg1: #fff;
+  --colorBg2: #EFF3F7;
+  --colorBg3: #f8f8f8;
+  --colorText1: #000;
+  --colorBtn1: #262626;
+  --colorBtn2: #fff;
+  --colorLink1: #2e2e2e;
+  --colorLink2: #fff;
+  --colorLink3: #c2c2c2;
 
 }
 
@@ -76,6 +76,7 @@ body{
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: var(--colorText1);
   font-weight: bold;
+  opacity: 1;
 }
 .dropdown-menu{
   background: var(--colorBg2);
