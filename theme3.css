@@ -10,6 +10,7 @@
   --colorBtn1:white;
   --colorBtn2:#363636;
   --colorProduct:#d3d4d5;
+  --colorContactIcon: #363636;
 
   /* DARK */
   --colorBody:#2C2E36;
@@ -21,6 +22,7 @@
   --colorBtn1:white;
   --colorBtn2:#363636;
   --colorProduct:#2C2E36;
+  --colorContactIcon: white;
 
 }
 
@@ -68,11 +70,6 @@ a{text-decoration: none;}
   align-items: center;
   justify-content: center;
 }
-.iconDiv{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: end;
-}
 .iconContainer{
   width: 50px;
   height: 50px;
@@ -102,6 +99,7 @@ a{text-decoration: none;}
 }
 .productBoxOuter{
   width: 250px;
+  width: 100%;
   height: 200px;
   background: var(--colorProduct);
   border-radius: 30px;
@@ -110,6 +108,7 @@ a{text-decoration: none;}
   justify-content: center;
   align-items: center;
   margin-top: 120px;
+  padding: 0px 20px; 
 }
 .productBoxInner{
   width: 150px;
@@ -173,4 +172,21 @@ a{text-decoration: none;}
   outline: 0;
   box-shadow: none;
   opacity: var(--bs-btn-close-focus-opacity);
+}
+
+.contactBox{
+  width: 100%;
+  background: var(--colorBody);
+  color: var(--colorContactIcon);
+  margin: auto;
+  border-radius: 20px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #0A58CA;
+}
+
+@media screen and (max-width: 600px) {
+  .userName{
+    color: var(--colorSocail1);
+  }
 }
